@@ -1,0 +1,40 @@
+.tasks_main{
+    width: 98.2vw;
+    height: 95.8vh;
+    background-color:#F7ECDE ;
+    margin: 0;
+    border: 13px solid #A10035;
+    padding: 0;
+}
+#tasks_heading{
+    text-align: center;
+    color: #A10035;
+    font-size: 72px;
+    font-family: 'Rubik Dirt', cursive;
+}
+.container1{
+    width: 615px;
+}
+.input_field{
+    margin-top: 0px;
+    height: 35px;
+    background-color: transparent;
+    border:3px solid #A10035;
+    width: 550px;
+    padding: 0px 14px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width:416px) {
+    .tasks_main{
+      margin-top: 0px;
+      height: 94vh;
+      width: 93vw;
+    }
+    .input_field{
+        width: 330px;
+    }
+    #tasks_heading{
+        font-size: 40px;
+    }
+}
