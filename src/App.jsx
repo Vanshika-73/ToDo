@@ -5,7 +5,6 @@ import {Routes,Route} from 'react-router-dom';
 import Read from './components/Read';
 function App() {
   return (
-    // <Welcome/>
     <Routes>
       <Route path='/' element={<Welcome/>}/>
       <Route path='/read' element={<Read/>}/>

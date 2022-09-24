@@ -1,17 +1,24 @@
 import React from "react";
 import Container from "@mui/material/Container";
-import {useState} from "react";
+import {useState,useRef} from "react";
 import Task from './Task';
 import './tasks.css';
 import {InfinitySpin } from 'react-loader-spinner';
-
 function Tasks() {
+  const hei=useRef();
   const [loading,setLoading]=useState("true");
   let [task, setTasks] = useState([]);
   setTimeout(() => {
     setLoading("false");
   },800);
   function createTask(e) {
+    if(task.length<=5){
+      hei.current.setAttribute('class',"tasks_main");
+    }
+    else{
+      hei.current.removeAttribute('class',"tasks_main");
+      hei.current.setAttribute('class',"task_main");
+    }
     if (e.key === "Enter") {
       console.log(e.target.value);
       setTasks([
@@ -52,22 +59,21 @@ function Tasks() {
   }
   else{
   return (
-    <div className="tasks_main">
+    <div className="tasks_main" ref={hei}>
       <h1 id="tasks_heading">My To-Do List</h1>
       <Container className="container1" maxWidth="sm">
         <input type="text"
         className="input_field my2"
           placeholder="✍enter your task"
-          // fullWidth
           variant="outlined"
           onKeyUp={createTask}
-          
         />
       </Container>
       <Container  maxWidth="sm" >
         {task.map((data) => (
          <Task text={data.task}
          isComplete={data.isComplete}
+         key={data.id}
          id={data.id}
          done={taskDone}
          undo={taskUndo}
