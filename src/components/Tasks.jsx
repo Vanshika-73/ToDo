@@ -47,6 +47,13 @@ function Tasks() {
     let index=cloneArr.findIndex((item)=>item.id===id);
     if (cloneArr[index]) cloneArr.splice(index, 1);;
     console.log(cloneArr);
+    if(task.length<=5){
+      hei.current.setAttribute('class',"tasks_main");
+    }
+    else{
+      hei.current.removeAttribute('class',"tasks_main");
+      hei.current.setAttribute('class',"task_main");
+    }
     setTasks([...cloneArr]);
   }
   if(loading==='true'){
