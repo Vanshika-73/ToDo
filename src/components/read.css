@@ -1,75 +1,82 @@
-.read{
-    margin: 0;
-    padding: 0;
-    height: 95.8vh;
-    width: 98vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 13px solid #A10035;
-    background-color: #F7ECDE;
+.read {
+  margin: 0;
+  padding: 0;
+  height: 95.8vh;
+  width: 96vw;
+
+  /* border: 13px solid #A10035; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.read_box{
-    width: 40vw;
-    height:65vh;
-    border: 10px double #A10035;
-    color: #A10035;
+.read_box {
+  width: 40vw;
+  height: 65vh;
+  border: 10px double #a10035;
+  color: #a10035;
 }
-.read_box #read_heading{
+.read_box #read_heading {
   text-align: center;
-    font-family: 'Rubik Dirt', cursive;
+  margin-top: 10ox;
+  font-size: 55px;
+  font-family: "Rubik Dirt", cursive;
 }
-.read_list{
-    line-height: 30px;   
-    margin-left: 20px;
-    font-size: 20px;
-    margin-right: 20px;
+.read_list {
+  line-height: 30px;
+  /* list-style: none; */
+  font-size: 20px;
+  margin: 20px 30px;
 }
-.read_button{
-    background-color: #A10035;
-    color: #F7ECDE;
-    display: flex;
-    align-items: center;
-    border: none;
-    justify-content: center;
+.read_button {
+  background-color: #a10035;
+  color: #f7ecde;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  justify-content: center;
 }
-@media only screen and (max-width:1295px) {
-  .read_box{
+@media only screen and (max-width: 1295px) {
+  .read_box {
     width: 60vw;
     height: 70vh;
   }
+}
+@media only screen and (max-width: 1002px) {
+  .read_box {
+    width: 60vw;
+    height: 80vh;
   }
-@media only screen and (max-width:1002px) {
-.read_box{
-  width: 60vw;
-  height: 80vh;
 }
-}
-@media only screen and (max-width:715px) {
-  .read_box #read_heading{
+@media only screen and (max-width: 715px) {
+  .read_box #read_heading {
     font-size: 43px;
   }
+}
+@media only screen and (max-width: 620px) {
+  .read_box {
+    width: 80vw;
+    height: 80vh;
   }
-  @media only screen and (max-width:620px) {
-    .read_box{
-      width: 80vw;
-      height: 80vh;
-    }
-    .read_box #read_heading{
-      font-size: 33px;
-    }
-    }
-@media only screen and (max-width:425px) {
-      .read_box{
-        width: 90vw;
-        height: 90vh;
-      }
-      .read_box #read_heading{
-        
-        font-size: 30px;
-      }
-      .read_list{
-        margin-left: 0px;
-      }
-      
+  .read_box #read_heading {
+    font-size: 33px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .read {
+    width: 96vw;
+  }
+  .read_box {
+    width: 85vw;
+    height: 90vh;
+  }
+  .read_box #read_heading {
+    font-size: 30px;
+  }
+  .read_list {
+    margin-left: 25px;
+  }
 }

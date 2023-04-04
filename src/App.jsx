@@ -3,6 +3,8 @@ import Tasks from './components/Tasks'
 import Welcome from './components/Welcome';
 import {Routes,Route} from 'react-router-dom';
 import Read from './components/Read';
+import './index.css';
+
 function App() {
   return (
     <Routes>

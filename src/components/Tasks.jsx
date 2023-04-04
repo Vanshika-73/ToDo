@@ -66,7 +66,7 @@ function Tasks() {
   }
   else{
   return (
-    <div className="tasks_main" ref={hei}>
+    <div className="tasks_main" ref={hei} >
       <h1 id="tasks_heading">My To-Do List</h1>
       <div className="container1" >
         <input type="text"
