@@ -11,7 +11,7 @@
     margin-top: 0px;
     display: flex;
     justify-content: center;
-    font-size: 150px;
+    font-size: 8rem;
     margin-top: 10px;
     margin-bottom: 80px;
     font-family: 'Rubik Dirt', cursive;
@@ -38,9 +38,19 @@
     height: 60px;
 }
 
-@media only screen and (max-width:416px) {
+@media only screen and (max-width:770px) {
     .heading_main{
-        font-size: 70px;
+        font-size: 6rem;
+    }
+}
+@media only screen and (max-width:560px) {
+    .heading_main{
+        font-size: 5rem;
+    }
+}
+@media only screen and (max-width:456px) {
+    .heading_main{
+        font-size: 3rem;
         margin-top: 10px;
         margin-bottom: 30px;
     }

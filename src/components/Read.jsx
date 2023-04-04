@@ -32,7 +32,9 @@ function Read() {
             <li>When refreshed the web page, your list will also get refreshed!</li>
           </ul>
         </div>
+        <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
         <button className='read_button' onClick={()=>navi('/tasks')}>Create list</button>
+        </div>
         </div>
       </div>
     )

@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "@mui/material/Container";
+import {Container} from "@mui/material";
 import {useState,useRef} from "react";
 import Task from './Task';
 import './tasks.css';
@@ -68,15 +68,15 @@ function Tasks() {
   return (
     <div className="tasks_main" ref={hei}>
       <h1 id="tasks_heading">My To-Do List</h1>
-      <Container className="container1" maxWidth="sm">
+      <div className="container1" >
         <input type="text"
         className="input_field my2"
           placeholder="✍enter your task"
           variant="outlined"
           onKeyUp={createTask}
         />
-      </Container>
-      <Container  maxWidth="sm" >
+      </div>
+      <Container  maxWidth="sm" sx={{mb:4}}>
         {task.map((data) => (
          <Task text={data.task}
          isComplete={data.isComplete}

@@ -1,10 +1,9 @@
 import React from 'react';
-import { Paper } from "@mui/material";
-import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
+import { Paper, Button, ButtonGroup } from "@mui/material";
+// import { DeleteIcon, UndoIcon} from '@mui/icons-material'/;
+import DeleteIcon from '@mui/icons-material/Delete';
 import CheckIcon from '@mui/icons-material/Check';
 import UndoIcon from '@mui/icons-material/Undo';
-import DeleteIcon from '@mui/icons-material/Delete';
 import './task.css';
 function Task(props) {
   return (

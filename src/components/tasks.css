@@ -1,6 +1,6 @@
 .tasks_main{
-    width: 98vw;
-    height: 96vh;
+    width: 97vw;
+    height: 100%;
     background-color:#F7ECDE ;
     margin: 0;
     border: 13px solid #A10035;
@@ -21,30 +21,24 @@
     font-family: 'Rubik Dirt', cursive;
 }
 .container1{
-    width: 615px;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .input_field{
     margin-top: 0px;
     height: 35px;
     background-color: transparent;
     border:3px solid #A10035;
-    width: 550px;
+    width: 100%;
     padding: 0px 14px;
     font-size: 18px;
 }
+@media only screen and (max-width:720px) {
+    .container1{
+        width: 80%;
+    }
 
-@media only screen and (max-width:416px) {
-    .tasks_main{
-      margin-top: 0px;
-      width: 93vw;
-    }
-    .task_main{
-        width:92vw ;
-    }
-    .input_field{
-        width: 330px;
-    }
-    #tasks_heading{
-        font-size: 40px;
-    }
 }
